@@ -6,6 +6,7 @@ Este projeto tem como objetivo processar e estruturar dados de vendas no varejo 
 
 O repositório está organizado da seguinte forma:
 
+```text
 StoreDatabasesExtraction/
 │
 ├── Data/
