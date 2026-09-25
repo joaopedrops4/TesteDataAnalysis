@@ -47,12 +47,12 @@ def clean_and_merge(train, stores, oil, holidays):
     return df_merged
 
 def export_data(df, processed_path):
-    # Cria a pasta automaticamente se ela não existir ainda
+    import os
     os.makedirs(processed_path, exist_ok=True)
     
-    # Parquet é mais eficiente em espaço e leitura pelo Power BI do que CSV
-    output_file = f'{processed_path}/dataset_consolidado.parquet'
-    df.to_parquet(output_file, index=False)
+    # Exportando o DataFrame consolidado para CSV
+    output_file = f'{processed_path}/dataset_consolidado.csv'
+    df.to_csv(output_file, index=False)
     print(f"Dados exportados com sucesso para: {output_file}")
 
 if __name__ == "__main__":
