@@ -4,3 +4,4 @@ data/processed/*
 !data/processed/.gitkeep
 __pycache__/
 .ipynb_checkpoints/
+node_modules/
